@@ -1,30 +1,8 @@
 # Random Quote Generator
+This is a backend API that allows you to interact with the quotes from the TV show The Office. Sending a Get request to the base url will return a random quote along with the character who said it. There is also a /quote endpoint that allows users to interact with the quotes data via typical CRUD operations. The information for how to mass upload the quotes data to the sqlite db is below in the init DB section.
 
-## Introduction
-
-Your task is to build a backend application that acts as a RESTful API Server for displaying random quotes. 
-
-The application should be written using [NestJS](https://nestjs.com/), [TypeScript](https://www.typescriptlang.org/), [TypeORM](https://typeorm.io), and [SQLite](https://www.sqlite.org)
-
-## Getting Started
-
-The NestJS starter code and [quotes file](src/data/office_quotes.json) can be found in this repository. 
-The [NestJS First Steps](https://docs.nestjs.com/first-steps) documents are a great launching point to begin building this.
-
-## What We Expect From You
-1. Create an application that creates and uses a RESTful API to retrieve and display a random quote from the given quotes [dataset](src/data/office_quotes.json). This application does not need to be deployed or hosted anywhere- just something you can run locally.
-2. Add tests to your newly created application.
-3. Add any additional feature of your choice.
-4. Update the README with any information you want to include that will help us understand and run your project.
-5. Upload your completed code to your own github account and share it with us. If the repo is private please share it with `violet-hiring`.
-
-## Need Help?
-
-Feel free to consult any NestJS or TypeScript documentation as necessary. For any other further questions or issues that arise, reach out to your hiring manager.
-
-## Time Estimate
-
-We expect this to take you 2-4 hours to complete. This isn’t a hard limit- it is just for you to plan your time!
+## Future Improvements
+This project is the result of my first 4 hours learning to use nest.js and sqlite. Some features I would have liked to add with more time are pagination and filtering on the Get operation for the /quotes endpoint, and some sort of authorizaition to update, create and delete quotes via the api. I would also probably do more extensive mock and e2e testing.
 
 ## Installation
 
